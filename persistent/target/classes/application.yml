@@ -1,0 +1,12 @@
+spring:
+  # Spring JDBC configuration
+  datasource:
+    name: tasksdb
+    url:      jdbc:h2:file:~/h2/tasks
+    driverClassName: org.h2.Driver
+
+  # Spring Data JPA configuration
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
